@@ -6,8 +6,10 @@ var sticky = navbar.offset().top;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
     navbar.addClass("sticky")
+    navbar.css({'overflow':'visible'});
     } else {
     navbar.removeClass("sticky");
+    navbar.css({'overflow':'hidden'});
     }
 }
 

@@ -51,7 +51,7 @@ body {
   /* The dropdown container */
   .dropdown {
     float: left;
-    overflow: hidden;
+    /* overflow: auto; */
   }
   
   /* Dropdown button */
@@ -119,18 +119,27 @@ body {
     grid-row: 1/ span 2;
 }
 .grid-content {
-    grid-column: 1 / span 6;
-    grid-row: 1 / span 6;
-    color: red;
-    font-size: 20px;
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 6;
+  color:black;
+  font-size: 18px;
+  text-align: justify;
 }
 .grid-footer {
     grid-column: 1 / span 6;
     grid-row: 7/ span 3;
 }
+.content-paragraph {
+  text-align: justify;
+  margin-top: -5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 #bio-image {
   border: 2px solid brown;
   float: left;
-  max-height: 200px;
-  margin: 10px;
+  max-height: 250px;
+  margin: 20px;
+  margin-top: -0px;
+  margin-bottom: 5px;
 }
