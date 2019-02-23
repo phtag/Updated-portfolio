@@ -1,0 +1,142 @@
+:root {
+    --background: rgba(21, 12, 110, 0.85);
+}
+body {
+    /* background: url("../images/h1-WoodlandSunset.jpg"); */
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }
+header {
+        position: sticky;
+        top: 0;
+}
+    header, footer, article, nav, div {
+    padding: 20px;
+    background: gold;
+    color: black;
+    /* height: 100%; */
+    }
+    #pageHeader {
+        grid-area: header;
+    }
+    #pageFooter {
+        grid-area: footer;
+    }
+    #mainArticle { 
+        grid-area: article;      
+    }
+    #mainNav { 
+        grid-area: nav; 
+    }
+    #siteAds { 
+        grid-area: ads; 
+    }
+/* .my-header {
+    background: var(--background);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    font-weight: bold;
+    font-size: 30px;
+}
+#my-navbar {
+    background: var(--background);
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/* Page content */
+/* .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  /* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+  
+/* nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} */
+/* nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+nav li {
+
+} */
+/* .grid-container {
+    display: grid;
+
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .grid-item-header {
+    grid-column: 1 / span 6;
+    grid-row: 1/ span 2;
+  }
+
+  .grid-item-1 {
+    grid-row: 1 / span 2;
+  }
+  .grid-item-12 {
+    grid-column: 1 / span 6;
+  }
+  .my-header {
+    grid-area: header;
+  }
+  .my-content {
+    grid-area: content;
+  }
+  .my-navigation-bar {
+    grid-area: navigation;
+  }
+  .my-sidebar {
+    grid-area: sidebar;
+  }
+  .my-ads {
+    grid-area: ads;
+  }
+  .my-footer {
+    grid-area: footer;
+  }
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size: 24px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  }
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }  
