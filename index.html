@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peter H. Tag</title>   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +17,9 @@
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/materialize.css"> -->
     <!-- jQuery -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-    <title>Peter H. Tag</title>   
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="assets\css\form.css" >
 </head>
 <body>
     <div class="header">
@@ -55,16 +58,36 @@
         </div>
         <div class="grid-items grid-content-contact" id="grid-contact">
             <p>Contact</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <form class="form1" action="">
+                <label id="my-form-labels" for="firstName" class="first-name">First Name</label>
+                <input id="firstName" type="text">
+    
+                <label id="my-form-labels" for="lastName" class="last-name">Last Name</label>
+                <input id="lastName" type="text">
+    
+                <label id="my-form-labels" for="email">Email</label>
+                <input id="email" type="email">
+
+                <label id="my-form-labels" for="message">Message</label>
+                <input id="message" type="text">
+
+                <button>Submit</button>
+            </form>
         </div>
         <div class="grid-items grid-content-portfolio" id='grid-portfolio'>
             Portfolio content
         </div>
-        <div class="grid-item">2</div>
+        <div>
+            <div class="grid-item">
+                <a href="https://phtag.github.io/Word-guess-game/"></a>
+                <img src="assets/images/Word-guess-game.JPG">
+            </div>
+            Word Guess Game</div>
+        <div class="grid-item" id="portfolio-1">
+            <a class="nav-link" href="https://phtag.github.io/Word-guess-game/">Word Guess Game</a>
+            <div>Test</div>
+        </div>
+
         <div class="grid-item">3</div>
         <div class="grid-item">4</div>
         <div class="grid-item">5</div>
@@ -96,21 +119,10 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="assets\javascript\app.js"></script>
+<!-- <script src="assets\javascript\form.js"></script> -->
 <script>
-//     alert("Chanker=" + $(".navbar").offset().top);
-//     var navbar = $(".navbar");
-//     alert('Top offset=' + navbar.offset().top);
-//     var sticky = navbar.offset().top;
-//     window.onscroll = function() {myFunction()};
-
-// function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//     navbar.addClass("sticky")
-//     } else {
-//     navbar.removeClass("sticky");
-//     }
-// }
 </script>
 </html>
         
