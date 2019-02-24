@@ -7,11 +7,10 @@ var scrollToPosition = {
 $(document).ready(function(){
     // $(this).scrollTop(0);
     // $(window).scrollTop();  // Frustratingly, this doesn't work. gave up after several hours of trying & testing different things
-    window.scrollTo(0, 500);
+    scrollToPosition.top = 100;
+    internalScrollingEvent=true;
+    window.scrollTo(0, 0);
     window.onscroll = function() {myFunction()};
-    // window.onbeforeunload = function () {
-    //     window.scrollTo(0, 0);
-    //   }
     var navbar = $(".navbar");
     var sticky = navbar.offset().top;
     var about = $("#grid-about").offset().top;
@@ -26,6 +25,7 @@ $(document).ready(function(){
             navbar.css({'overflow':'hidden'});
         }
         if (internalScrollingEvent) {
+            alert('Scrolling');
             window.scrollTo(0, scrollToPosition.top -100);  // subtract 100 to deal with disappearing header
             internalScrollingEvent=false;   // turn this off or else we will infinitely loop
         }
