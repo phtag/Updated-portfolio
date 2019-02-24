@@ -12,10 +12,27 @@ body {
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     background-image: url("../images/h1-WoodlandSunset-2.jpg");
+    background-size: 100% 100%;
+
+  }
+  .my-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(14, 15, 71);
+    color: white;
+    max-height: 7%;
+    font-family: Arial;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    padding-top: -20px;
   }
   .paragraph {
     margin-block-start: .2em;
     margin-block-end: .2em;
+
   }
   .content {
     padding: 16px;
@@ -32,10 +49,11 @@ body {
   }
 
 /* Navbar container */
-.navbar {
+.navbar  {
     overflow: hidden;
     background-color: rgb(14, 15, 71);
     font-family: Arial;
+    z-index: 1;
   }
   
   /* Links inside the navbar */
@@ -100,34 +118,68 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .parallax-child {
+    transform-origin: 0 0;
+    transform: translateZ(-2px) scale(3);
+  }
 .grid-container { 
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: repeat(auto-fill, 200px) ;
     grid-gap: 10px;
     background-color: #2196F3;
-    padding: 10px;
+    padding: 10px 40px 0px 40px;
+    background-image: url("../images/abendstimmung-atmospheric-background-531872.jpg");
+    background-size: 100% 100%;
   }
+.container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+    perspective-origin: 0 0;
+}
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0px;
     /* font-size: 30px; */
 }
 .grid-item-header {
     grid-column: 1 / span 6;
     grid-row: 1/ span 2;
 }
-.grid-content {
+.grid-content-about {
   grid-column: 1 / span 6;
   grid-row: 1 / span 6;
   color:black;
   font-size: 18px;
   text-align: justify;
+  margin-bottom: 100px;
+}
+.grid-content-contact {
+  grid-column: 1 / span 6;
+  /* grid-row: 7 / span 6; */
+  color:black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 100px;
+
+}
+.grid-content-portfolio {
+  grid-column: 1 / span 6;
+  /* grid-row: 13 / span 6; */
+  color:black;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 100px;
+
 }
 .grid-footer {
     grid-column: 1 / span 6;
-    grid-row: 7/ span 3;
+    grid-row: 25/ span 3;
+}
+#grid-item24 {
+  color: black;
 }
 .content-paragraph {
   text-align: justify;
@@ -142,4 +194,18 @@ body {
   margin: 20px;
   margin-top: -0px;
   margin-bottom: 5px;
+}
+#header-title {
+  font-weight: bold;
+  color: rgb(9, 9, 155);
+  font-size: 48px;
+  margin-block-start: .2em;
+  margin-block-end: .2em;
+}
+#header-text {
+  font-weight: bold;
+  color: rgb(251, 251, 248);
+  font-size: 32px;
+  margin-block-start: .2em;
+  margin-block-end: .2em;
 }

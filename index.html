@@ -13,43 +13,59 @@
     <!-- Compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/materialize.css"> -->
     <!-- jQuery -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <title>Peter H. Tag</title>   
 </head>
 <body>
     <div class="header">
-        <p class="paragraph">Peter H. Tag</p>
-        <p class="paragraph">Developer of all things supporting the creation and application of web-based simulations</p>
+        <!-- <p class="paragraph" id="header-title">Peter H. Tag</p> -->
+        <p id="header-title">Peter H. Tag</p>
+        <p id="header-text">Developer of all things supporting the creation and application of web-based simulations</p>
         <!-- <p>Scroll down to see the sticky effect.</p> -->
     </div>  
     <div class="navbar">
     <!-- <nav class="navbar-fixed"> -->
-        <a class="active" href="javascript:void(0)">Home</a>
-        <a href="javascript:void(0)">Contact</a>
+        <!-- <a class="active" href="javascript:void(0)">About</a> -->
+        <a class="active" href="#" id="about">About</a>
+        <!-- <a href="javascript:void(0)">Contact</a> -->
+        <a href="#" id="contact">Contact</a>
         <div class="dropdown">
-            <button class="dropdown-btn">Portfolio</button>
+            <button class="dropdown-btn" id="portfolio">Portfolio</button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#" id="navbar-link-1">Link 1</a>
+                <a href="#" id="navbar-link-2">Link 2</a>
+                <a href="#" id="item-22">Link 3</a>
             </div>                  
         </div>
-        <a href="javascript:void(0)">LinkedIn</a>
+        <a href="javascript:void(0)" id="navbar-LinkedIn">LinkedIn</a>
     </div>
     <!-- </nav> -->
     <div class="grid-container">
-        <div class="grid-items grid-content">
+        <!-- <div class="parallax"><img src="assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
+        </div> -->
+        <div class="grid-items grid-content-about" id="grid-about">
             <img id="bio-image" src="assets/images/PeterBioPicture.jpg" />
             <p class='content-paragraph'>I was born in the Los Angeles area, but grew up in New Jersey just outside New York City. So, yes, I'm a "Joysey" boy at heart! I went to college in the Northeast studying geology, geophysics, applied math and philosophy. In 1980, after burning out as a graduate student and not having a nickel to my name, I left the Ph.D. program I was in to experience life outside of academia. I immediately stumbled into a job where I was able to use the programming skills I had acquired as student to write interfaces and algorithms to schedule radio station commercials for the largest AM radio station in New York City. I have been programming in some form or another ever since.</p>
             <p class='content-paragraph'>In 1994, I was very fortunate to be working as a technical staff member in a group at Los Alamos National Laboratory that was devoted entirely to using simulation technology to solve complex real-world problems. It was while working in this group that I discovered how to apply my passion for philosophy to systems modeling. This experience exposed me to the visionary simulation application ExtendSim which was invented by Bob Diamond and his company, Imagine That, Inc. in San Jose, CA.</p>
             <p class='content-paragraph'>Over the next 25 years, I worked or consulted for many different companies and organizations including Apple, Intel, Boeing, Citibank, Procter & Gamble, Johnson & Johnson, Monsanto, Florida Power & Light, and others to use my skills as a simulation modeler to solve complex problems and provide decision support to managers, designers, and engineers.</p>
-            <p class='content-paragraph'>I am presently working for Imagine That, Inc. to develop cutting edge simulation technologies and make simulation accessible to and useful for a much broader user base. I telecommute from the Sacramento area where I have been living since the summer of 2017. I have one son who also lives in the Sacramento area with his family.</p>            
-            <p class="content-paragraph">I am presently working for Imagine That, Inc. to develop cutting edge simulation technologies and make simulation accessible to and useful for a much broader user base. I telecommute from the Sacramento area where I have been living since the summer of 2017. I have one son who also lives in the Sacramento area with his family.</p>            
+            <p class='content-paragraph'>I am presently working for Imagine That, Inc. to develop cutting edge simulation technologies and make simulation accessible to and useful for a much broader user base. I telecommute from the Sacramento area where I have been living since the summer of 2017. I have one son and a grandson who also live in the Sacramento area.</p>            
         </div>
-        <div class="grid-items grid-footer">2</div>
-        <div class="grid-items grid-item-3">3</div>
-        <!-- <div class="grid-items grid-item-4">4</div> -->
+        <div class="grid-items grid-content-contact" id="grid-contact">
+            <p>Contact</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="grid-items grid-content-portfolio" id='grid-portfolio'>
+            Portfolio content
+        </div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
         <div class="grid-item">5</div>
         <div class="grid-item">6</div>
         <div class="grid-item">7</div>
@@ -57,23 +73,26 @@
         <div class="grid-item">9</div>
         <div class="grid-item">10</div>
         <div class="grid-item">11</div>
-        <div class="grid-item-12">12</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">10</div>
-        <div class="grid-item">11</div>
-        <div class="grid-item-12">12</div>
-        <div class="grid-item-12">12</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">10</div>
-        <div class="grid-item">11</div>
-        <div class="grid-item-12">12</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+        <div class="grid-item">17</div>
+        <div class="grid-item">18</div>
+        <div class="grid-item">19</div>
+        <div class="grid-item">20</div>
+        <div class="grid-item">21</div>
+        <div class="grid-item">22</div>
+        <div class="grid-item" id="grid-about">23</div>
+        <div class="grid-item" id="grid-item24">24</div>
+        <!-- <div class="grid-footer" id="section-12">footer</div> -->
     </div> 
+    <div id="test-section">Test section</div>
+    <div class="my-footer">
+        <h1>Copyright</h1>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="assets\javascript\app.js"></script>
