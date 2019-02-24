@@ -3,7 +3,6 @@ var scrollToPosition = {
         left: 0,
         top: 0
 }
-
 $(document).ready(function(){
     // $(this).scrollTop(0);
     // $(window).scrollTop();  // Frustratingly, this doesn't work. gave up after several hours of trying & testing different things
@@ -25,7 +24,6 @@ $(document).ready(function(){
             navbar.css({'overflow':'hidden'});
         }
         if (internalScrollingEvent) {
-            alert('Scrolling');
             window.scrollTo(0, scrollToPosition.top -100);  // subtract 100 to deal with disappearing header
             internalScrollingEvent=false;   // turn this off or else we will infinitely loop
         }
