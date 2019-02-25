@@ -237,6 +237,7 @@ body {
   margin-block-start: .2em;
   margin-block-end: .2em;
 }
+
 form {
   padding: 1em;
   background: #f9f9f9;
@@ -258,7 +259,7 @@ form button {
   padding: 0.7em;
   border: 0;
 }
-form button:hover {
+form #my-button:hover {
   background: rgb(72, 84, 251);
   color: white;
   font-weight: bold;
@@ -270,9 +271,9 @@ label {
   /* padding: 0.5em 1.5em 0.5em 0; */
   padding: 0.1em .1em 0.1em 0.1em;
 }
-#my-form-labels {
+.my-form-labels {
   font-size: 18px;
-  padding: 0px;
+  padding: 10px;
 }
 input {
   width: 100%;
@@ -282,22 +283,44 @@ input {
 input:focus {
   outline: 3px solid gold;
 }
-button {
+#my-button {
   /* float: left; */
   border-radius: 5px 5px 5px 5px;
-  width: 20%;
+  width: 40%;
   text-align: center;
 }
 #portfolio-1 {
   background-image: url("../images/Word-guess-game.JPG");
   background-size: 100% 100%;
 } 
-
+#inputs-message {
+  height: 16px;
+  margin: 10px;
+  padding: 0px;
+  font-size: 16px;
+}
+#inputs-email {
+  height: 16px;
+  margin: 10px;
+  padding: 0px;
+  font-size: 16px;
+}
+#inputs-firstname {
+  height: 16px;
+  margin: 10px;
+  padding: 0px;
+  font-size: 16px;
+}
+#inputs-lastname {
+  height: 16px;
+  margin: 10px;
+  padding: 0px;
+  font-size: 16px;
+}
 @media (min-width: 400px) {
   form {
     overflow: hidden;
   }
-
   label {
     float: auto;
     width: 200px;
@@ -308,12 +331,13 @@ button {
     width: calc(100% - 200px);
   }
 
-  button {
-    /* float: left; */
+  /* button { */
+    #my-button {
+      /* float: left; */
     text-align: center;
     /* width: calc(100% - 200px); */
     width: calc(75% - 200px);
     font-weight: bold;
-    color: white;
+    color: black;
   }
 }
