@@ -58,12 +58,12 @@
         </div>
         <div class="grid-items grid-content-contact" id="grid-contact">
             <p>Contact</p>
-            <form class="form1" action="">
+            <form class="my-contact-form">
                 <label  for="inputs-firstname" class="my-form-labels">First Name</label>
-                <input id="inputs-firstname" type="text">
+                <input id="inputs-firstname" type="text" required>
     
                 <label  for="inputs-lastname" class="my-form-labels">Last Name</label>
-                <input id="inputs-lastname" type="text">
+                <input id="inputs-lastname" type="text" required>
     
                 <label for="inputs-email" class="my-form-labels">Email</label>
                 <input id="inputs-email" type="email">
@@ -71,7 +71,8 @@
                 <label for="inputs-message" class="my-form-labels">Message</label>
                 <input id="inputs-message" type="text">
 
-                <input type="submit" value="Send" id="my-button"></input>
+                <!-- <input type="submit" value="Send" id="my-button"></input> -->
+                <input type="submit" id="my-button" value="Submit"></input>
             </form>
         </div>
         <div class="portfolio-labels">

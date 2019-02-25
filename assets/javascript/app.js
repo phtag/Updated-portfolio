@@ -15,6 +15,8 @@ $(document).ready(function(){
     var about = $("#grid-about").offset().top;
     var contact = $("#grid-contact").offset().top;
     var portfolio = $("#grid-portfolio").offset().top;
+    // disable contact form button to start 
+    // $('#my-button').attr("disabled", "disabled");
     function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.addClass("sticky")
@@ -38,5 +40,42 @@ $(document).ready(function(){
         // function, above. So we actually end up doing the scrolling action in the scroll 
         // response function
         window.scrollTo(0, scrollToPosition.top);   
+    });
+    $('.my-contact-form').on('keyup', function(event) {
+        // This function does user input validation and checks whether or not the user has
+        //  set a value for each of the required select inputs in the review form
+        var disable=false;
+        $('form input').each(
+            function(index){  
+                var input = $(this).val();
+                if (input === "") {
+                    disable=true;
+                }
+            }
+        );
+        // Following code doesn't work. Event though the button is disabled,
+        // it still displays normally. Not worth the time to figure out what
+        // library is clobbering what should be the normal css behavior
+
+        // if (disable) {
+        //     $('#my-button').attr("disabled", "disabled");
+        // } else {
+        //     $('#my-button').removeAttr("disabled");
+        // }
+        console.log("Button state=" + $('#my-button').attr("disabled"));
+      });
+    $(document).on('click', '#my-button', function() {
+        var disabled=false;
+        $('form input').each(
+            function(index){  
+                var input = $(this).val();
+                if (input === "") {
+                    disabled=true;
+                }
+            }
+        );
+        if (disabled) {
+            alert('please input information in all of the fields');
+        }
     });
 });
