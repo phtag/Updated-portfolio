@@ -4,7 +4,8 @@ body {
     font-family: 'Oxygen', sans-serif;
     /* font-family: 'Shadows Into Light', cursive; */
   }
-  
+  .my-contact-form {
+  }
   .header {
     background-color: #f1f1f1;
     margin: 0px;
@@ -242,7 +243,7 @@ body {
 
 #header-text {
   font-weight: bold;
-  color: rgb(251, 251, 248);
+  color:black;
   font-size: 32px;
   margin-block-start: .2em;
   margin-block-end: .2em;
@@ -274,7 +275,9 @@ form #my-button:hover {
   color: white;
   font-weight: bold;
 }
-
+button[disabled] { 
+  pointer-events: none;
+}
 label {
   text-align: left;
   display: block;
@@ -296,8 +299,9 @@ input:focus {
 #my-button {
   /* float: left; */
   border-radius: 5px 5px 5px 5px;
-  width: 40%;
+  min-width: 40%;
   text-align: center;
+  /* margin: auto; */
 }
 #portfolio-1 {
   background-image: url("../images/Word-guess-game.JPG");

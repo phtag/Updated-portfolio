@@ -15,8 +15,15 @@ $(document).ready(function(){
     var about = $("#grid-about").offset().top;
     var contact = $("#grid-contact").offset().top;
     var portfolio = $("#grid-portfolio").offset().top;
+
     // disable contact form button to start 
-    $('#my-button').attr("disabled", "disabled");
+    // $('#my-button').attr("disabled", "disabled");
+    var myButton = $("#my-button");
+    myButton.prop('disabled', true);    // Why does this not work?????
+    document.getElementById("my-button").disabled = true;   // Why does this not work?????
+    // myButton.hide();
+    myButton.css('color', 'gray');    // Why does this not work?????
+
     function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.addClass("sticky")
@@ -53,6 +60,15 @@ $(document).ready(function(){
                 }
             }
         );
+        if (disable) {
+            myButton.prop('disabled', true);    // Why does this not work?????
+            myButton.css('color', 'gray');    // Why does this not work?????
+        }
+        else {
+            myButton.css('color', 'black');    // Why does this not work?????
+            myButton.removeAttr("disabled");
+            // myButton.show();
+        }
         // Following code doesn't work. Event though the button is disabled,
         // it still displays normally. Not worth the time to figure out what
         // library is clobbering what should be the normal css behavior
