@@ -16,7 +16,7 @@ $(document).ready(function(){
     var contact = $("#grid-contact").offset().top;
     var portfolio = $("#grid-portfolio").offset().top;
     // disable contact form button to start 
-    // $('#my-button').attr("disabled", "disabled");
+    $('#my-button').attr("disabled", "disabled");
     function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.addClass("sticky")
@@ -75,7 +75,7 @@ $(document).ready(function(){
             }
         );
         if (disabled) {
-            alert('please input information in all of the fields');
+            $('#my-button').attr("disabled", "disabled");
         }
     });
 });

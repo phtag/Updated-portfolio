@@ -4,6 +4,7 @@ body {
     font-family: 'Oxygen', sans-serif;
     /* font-family: 'Shadows Into Light', cursive; */
   }
+  
   .header {
     background-color: #f1f1f1;
     margin: 0px;
@@ -230,6 +231,15 @@ body {
   margin-block-start: .2em;
   margin-block-end: .2em;
 }
+#header-email {
+  font-weight: bold;
+  color: rgb(9, 9, 155);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-block-start: .1em;
+  margin-block-end: .1em;
+}
+
 #header-text {
   font-weight: bold;
   color: rgb(251, 251, 248);
@@ -294,26 +304,26 @@ input:focus {
   background-size: 100% 100%;
 } 
 #inputs-message {
-  height: 16px;
-  margin: 10px;
+  height: 25px;
+  margin: 0px 10px 10px 10px;
   padding: 0px;
   font-size: 16px;
 }
 #inputs-email {
-  height: 16px;
-  margin: 10px;
+  height: 25px;
+  margin: 0px 10px 10px 10px;
   padding: 0px;
   font-size: 16px;
 }
 #inputs-firstname {
-  height: 16px;
-  margin: 10px;
+  height: 25px;
+  margin: 0px 10px 10px 10px;
   padding: 0px;
   font-size: 16px;
 }
 #inputs-lastname {
-  height: 16px;
-  margin: 10px;
+  height: 25px;
+  margin: 0px 10px 10px 10px;
   padding: 0px;
   font-size: 16px;
 }
@@ -340,5 +350,7 @@ input:focus {
     width: calc(75% - 200px);
     font-weight: bold;
     color: black;
+    font-size: 18px;
+    margin: 10px;
   }
 }
