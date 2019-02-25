@@ -27,7 +27,7 @@ body {
     font-family: Arial;
     color: white;
     text-align: center;
-    padding-top: 0px;
+    padding: 5px;
   }
   .paragraph {
     margin-block-start: .2em;
