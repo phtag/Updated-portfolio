@@ -1,7 +1,7 @@
 # Updated-portfolio
 Week 9 homework assignment - UC Davis Extension Full-Stack Bootcamp Course
 ### Overview
-This homework assignment required us to update our portfolio page to make it employer ready. 
+This homework assignment required us to update our portfolio page to make it employer ready. See my portfolio page at https://phtag.github.io/Updated-portfolio/
 
 ### Purpose
 The project taught us how to use HTML/CSS, frameworks and Javascripts in order to effectively market ourselves to prospective employees.
